@@ -677,6 +677,7 @@ h1 {
     .textoexpli{
         width: 96% !important;
         margin: 2% !important;
+        font-weight: lighter !important;
     }
 
     .cards-column,
