@@ -15,3 +15,57 @@
             <img src="imagenes/logo.jpg" alt="Logo AgroNova">
             <p><a href="indexlogeado.html" class="sesion" style="font-size: 19px; font-weight: bolder;">Inicio</a></p>
         </div>
+        <div class="search-bar">
+            <input type="text" id="buscador" placeholder="Buscar aerogeneradores, bombas, semillas, controladores...">
+            <button type="button" onclick="filtrarProductos()">🔍</button>
+        </div>
+
+        <div class="nav-actions">
+            <span class="ubicacion">📍 Guatemala</span>
+            <a href="--" class="sesion">Mi cuenta</a>
+            <button class="btn-carrito" onclick="toggleCarrito()">
+                🛒 Carrito <span class="badge-carrito" id="contador-carrito">0</span>
+            </button>
+        </div>
+    </header>
+
+    <div class="tienda-layout">
+        <main class="grid-productos" id="lista-productos">
+            <div class="producto-card">
+                <span class="etiqueta-promo">Envío e instalación</span>
+                <div class="img-box">
+                    <img src="Img/turbinaas.jpg" alt="">
+                </div>
+                <button class="btn-agregar" onclick="agregarAlCarrito('Aerogenerador Eólico de Alta Eficiencia 2kW', 6499.00)">
+                    🛒 Agregar
+                </button>
+                <div class="precio-bloque">
+                    <span class="descuento-badge">-13%</span>
+                    <span class="precio-anterior">22,400.00</span>
+                    <div class="precio-actual">19,488.00.<sup>00</sup></div>
+                    <small class="validez">Disponible con respaldo técnico</small>
+                </div>
+                <span class="marca-texto">AgroNova</span>
+                <h4 class="nombre-producto">Aerogenerador Eólico de 3 Aspas, Baja Velocidad de Arranque</h4>
+                <span class="vendedor-texto">Vendedor: AgroNova</span>
+            </div>
+
+            <div class="producto-card">
+                <span class="etiqueta-promo">Garantía 2 años</span>
+                <div class="img-box">
+                    <img src="Img/Controlador.avif" alt="   ">
+                </div>
+                <button class="btn-agregar" onclick="agregarAlCarrito('Controlador Eólico Greef + Inversor Growatt', 3850.00)">
+                    🛒 Agregar
+                </button>
+                <div class="precio-bloque">
+                    <span class="descuento-badge">-14%</span>
+                    <span class="precio-anterior">Q1,183.36</span>
+                    <div class="precio-actual">Q1,376.00<sup>00</sup></div>
+                    <small class="validez">Incluye pantalla táctil de monitoreo</small>
+                </div>
+                <span class="marca-texto">Greef / Growatt</span>
+                <h4 class="nombre-producto">Controlador de Carga Eólico Inteligente + Inversor de Red</h4>
+                <span class="vendedor-texto">Vendedor: AgroNova</span>
+            </div>
+            
