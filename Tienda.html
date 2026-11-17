@@ -10,31 +10,32 @@
 </head>
 
 <body>
-    <header class="navbar">
+    <div class="navbar">
         <div class="logo">
-            <img src="img/logoaspa.png" alt="Logo AgroNova">
+            <img src="Img/logoaspa.png" alt="Logo">
             <p><a href="indexlogeado.html" class="sesion" style="font-size: 19px; font-weight: bolder;">Inicio</a></p>
         </div>
-        <div class="search-bar">
-            <input type="text" id="buscador" placeholder="Buscar aerogeneradores, bombas, semillas, controladores...">
-            <button type="button" onclick="filtrarProductos()">🔍</button>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-
-        <div class="nav-actions">
-            <span class="ubicacion">📍 Guatemala</span>
-            <a href="--" class="sesion">Mi cuenta</a>
-            <button class="btn-carrito" onclick="toggleCarrito()">
-                🛒 Carrito <span class="badge-carrito" id="contador-carrito">0</span>
-            </button>
+        <div class="nav-links" id="nav-links">
+            <a href="misionvision.html">Misión y visión</a>
+            <a href="objetivoymetas.html">Objetivos y metas</a>
+            <a href="estrategias.html">Estrategias empresariales</a>
+            <a href="conocenosyasi.html">Conócenos</a>
+            <a href="Tienda.html">Comprar en AgroNova</a>
+            <a href="index.html" class="sesion salir-btn" id="inico">Salir</a>
         </div>
-    </header>
+    </div>
 
     <div class="tienda-layout">
         <main class="grid-productos" id="lista-productos">
             <div class="producto-card">
                 <span class="etiqueta-promo">Envío e instalación</span>
                 <div class="img-box">
-                    <img src="Img/Turbine.webp" alt="">
+                    <img src="Img/aerogenerador3.jpg" alt="">
                 </div>
                 <button class="btn-agregar" onclick="agregarAlCarrito('Aerogenerador Eólico de Alta Eficiencia 2kW', 6499.00)">
                     🛒 Agregar
@@ -53,7 +54,7 @@
             <div class="producto-card">
                 <span class="etiqueta-promo">Garantía 2 años</span>
                 <div class="img-box">
-                    <img src="Img/motor.webp" alt="   ">
+                    <img src="Img/controladoreolico.jpg" alt="   ">
                 </div>
                 <button class="btn-agregar" onclick="agregarAlCarrito('Controlador Eólico Greef + Inversor Growatt', 3850.00)">
                     🛒 Agregar
@@ -70,7 +71,7 @@
             </div>
                        <div class="producto-card">
                 <div class="img-box">
-                    <img src="Img/mooootor.webp" alt=" ">
+                    <img src="Img/generadorreal.jpg" alt=" ">
                 </div>
                 <button class="btn-agregar" onclick="agregarAlCarrito('Generador Eólico Imanes Permanentes 2KW', 3200.00)">
                     🛒 Agregar
@@ -89,7 +90,7 @@
             <div class="producto-card">
                 <span class="etiqueta-promo">Repuesto oficial</span>
                 <div class="img-box">
-                    <img src="Img/Aspas.webp" alt="Kit de 3 Hélices Aerodinámicas">
+                    <img src="Img/helicesreal.jpg" alt="Kit de 3 Hélices Aerodinámicas">
                 </div>
                 <button class="btn-agregar" onclick="agregarAlCarrito('Kit de 3 Hélices Aerodinámicas de Fibra', 1150.00)">
                     🛒 Agregar
@@ -108,7 +109,7 @@
             <div class="producto-card">
                 <span class="etiqueta-promo">Ideal para riego</span>
                 <div class="img-box">
-                    <img src="Img/bombaa.webp" alt="Bomba Hidroneumática Truper 24L">
+                    <img src="Img/bombahidro.jpg" alt="Bomba Hidroneumática Truper 24L">
                 </div>
                 <button class="btn-agregar" onclick="agregarAlCarrito('Bomba Hidroneumática Truper 24L 1/2 HP', 1495.00)">
                     🛒 Agregar
@@ -126,7 +127,7 @@
 
             <div class="producto-card">
                 <div class="img-box">
-                    <img src="img/sembrador.webp" alt="Sembradora Manual de Precisión">
+                    <img src="Img/automatica.jpg" alt="Sembradora Manual de Precisión">
                 </div>
                 <button class="btn-agregar" onclick="agregarAlCarrito('Sembradora Manual de Rodillo de Precisión', 980.00)">
                     🛒 Agregar
@@ -138,7 +139,7 @@
                     <small class="validez">Para maíz, frijol y hortalizas</small>
                 </div>
                 <span class="marca-texto">AgroTech</span>
-                <h4 class="nombre-producto">Sembradora Manual de Precisión con Rodillo Compactador</h4>
+                <h4 class="nombre-producto">Sembradora Automática de Precisión con Rodillo Compactador</h4>
                 <span class="vendedor-texto">Vendedor: AgroNova</span>
             </div>
 
@@ -176,24 +177,6 @@
                 </div>
                 <span class="marca-texto">Germoveg's</span>
                 <h4 class="nombre-producto">Semillas para Siembra de Tomate (Lycopersicum esculentum)</h4>
-                <span class="vendedor-texto">Vendedor: AgroNova</span>
-            </div>
-
-            <div class="producto-card">
-                <div class="img-box">
-                    <img src="img/zanahorias.webp" alt="Semillas de Zanahoria Germovegs">
-                </div>
-                <button class="btn-agregar" onclick="agregarAlCarrito('Sobre Semillas de Zanahoria Germovegs', 15.00)">
-                    🛒 Agregar
-                </button>
-                <div class="precio-bloque">
-                    <span class="descuento-badge">-25%</span>
-                    <span class="precio-anterior">Q20.00</span>
-                    <div class="precio-actual">Q15.<sup>00</sup></div>
-                    <small class="validez">Rinde aprox. 800 plantas/gramo</small>
-                </div>
-                <span class="marca-texto">Germoveg's</span>
-                <h4 class="nombre-producto">Semillas para Siembra de Zanahoria (Daucus carota)</h4>
                 <span class="vendedor-texto">Vendedor: AgroNova</span>
             </div>
         </main>

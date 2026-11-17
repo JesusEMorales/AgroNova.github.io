@@ -22,35 +22,15 @@ body {
     position: relative;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    width: 25%;
-}
-
 .logo img {
     height: 50px;
     width: auto;
     display: block;
 }
 
-.logo p {
-    margin-left: 3%;
-    font-weight: bolder;
-    color: #ffffff;
-}
-
-.sesion {
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 14px;
-    color: #ffffff;
-    font-weight: 500;
-}
-
-.sesion:hover {
-    color: #5fa8d3;
-    transition: transform 0.3s ease;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
 .menu-toggle {
@@ -99,6 +79,23 @@ body {
 
 .nav-links.active {
     display: flex;
+}
+
+.logo p {
+    margin: 0;
+}
+
+.sesion {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.sesion:hover {
+    color: #5fa8d3;
+    transition: transform 0.3s ease;
 }
 
 .titulo-seccion {

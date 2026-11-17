@@ -5,25 +5,77 @@ body {
     color: #001d3d;
 }
 
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #3a6ea5;
-    padding: 10px 25px;
-    gap: 20px;
-    flex-wrap: wrap;
+    padding: 5px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+    position: relative;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    display: block;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
-.logo img {
-    height: 48px;
-    border-radius: 6px;
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #3a6ea5;
+    flex-direction: column;
+    width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 5px 5px;
+    z-index: 1000;
+}
+
+.nav-links a {
+    padding: 12px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background 0.2s;
+}
+
+.nav-links a:hover {
+    background-color: #2e567d;
+}
+
+.nav-links.active {
+    display: flex;
 }
 
 .logo p {
