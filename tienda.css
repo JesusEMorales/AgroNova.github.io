@@ -5,6 +5,24 @@ body {
     color: #001d3d;
 }
 
+.footer {
+    background-color: #6c757d;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    padding: 22px 40px;
+    display: flex;
+}
+
+.footer-p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -569,144 +587,86 @@ h1 {
 }
 
 @media (max-width: 768px) {
-
-    html,
     body {
         margin: 0;
-        padding: 0;
         overflow-x: hidden;
-        width: 100%;
     }
 
-    .image-column1,
-    .image-column3 {
-        margin-top: 8% !important;
+    .textos {
+        flex-direction: column !important;
+        width: 100% !important;
     }
 
-    .main-container {
-        display: flex;
-        flex-direction: column;
-        width: 92% !important;
-        margin: 0 auto !important;
-        box-sizing: border-box;
-        gap: 1.5rem;
+    .contenedor1,
+    .contenedor2 {
+        width: 100% !important;
     }
 
-    .textoexpli{
+    .contenedor1 {
+        margin-top: 3%;
+    }
+
+    .contenedor1:hover {
+        transform: translateY(6px) !important;
+        transition: transform 0.3s ease;
+    }
+
+    .valores {
+        flex-direction: column !important;
         width: 96% !important;
         margin: 2% !important;
-        font-weight: lighter !important;
+        gap: 15px !important;
     }
 
-    .cards-column,
-    .image-column,
-    .image-column1,
-    .image-column2,
-    .image-column3 {
-        width: 100% !important;
-        box-sizing: border-box;
+    .valor,
+    .valorbajo,
+    .valoralto {
+        margin: 2% !important;
+        font-size: 14px !important;
+        padding: 2% !important;
     }
 
-    .cards-column {
-        margin-bottom: 1.5rem !important;
+    .valorbajo{
+        width: auto !important;
+        margin-top: 5% !important;
     }
 
-    .image-column,
-    .image-column1,
-    .image-column2,
-    .image-column3 {
-        height: 250px !important;
-        position: relative !important;
-        margin-bottom: 1.5rem !important;
-    }
-
-    .image-column img,
-    .image-column1 img,
-    .image-column2 img,
-    .image-column3 img {
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: cover !important;
-        position: absolute !important;
-        top: 0;
-        left: 0;
-    }
-
-    .imgexpli img {
-        width: 100% !important;
-        height: auto;
-        display: block;
-        object-fit: cover;
+    .valoralto{
+        width: auto !important;
     }
 
     h1 {
-        font-size: clamp(1.5rem, 5vw, 2rem);
-        line-height: 1.2;
-        word-break: break-word;
+        font-size: 28px !important;
     }
 
-
-    .image-overlay h1 {
-        font-size: clamp(1.3rem, 4.5vw, 1.75rem);
-        line-height: 1.2;
+    .titulo {
+        font-size: 32px !important;
     }
 
-    .image-overlay h2 {
-        font-size: 0.9rem;
-        line-height: 1.3;
+    .contenido {
+        font-size: 13px !important;
+        padding: 2%;
+    }
+
+    .textomedio {
+        margin: 2% !important;
+        font-size: 14px !important;
+        padding: 2% !important;
+    }
+
+    .footer {
+        width: 100% !important;
+        padding: 4% !important;
+        box-sizing: border-box !important;
     }
 
     .footer-p {
         display: flex;
         flex-direction: column;
-        align-items: center;
         text-align: center;
         gap: 10px;
-        padding: 1rem 0;
+        width: 100% !important;
+        margin: 0 !important;
+        box-sizing: border-box !important; 
     }
-
-    .cardtitulo3 {
-        margin-top: 8%;
-    }
-
-    .cardtitulo{
-        margin-top: 8%;
-    }
-
-    .image-column:hover,
-    .image-column2:hover,
-    .image-column1:hover,
-    .image-column3:hover {
-        transform: scaleX(1.03) !important;
-        transition: transform 0.5s ease;
-    }
-
-    .carta1:hover,
-    .carta11:hover,
-    .carta111:hover,
-    .carta1111:hover,
-    .carta3:hover,
-    .carta33:hover,
-    .carta333:hover,
-    .carta3333:hover {
-        transform: scaleX(1.03) !important;
-        transition: transform 0.5s ease;
-    }
-
-    .carta2:hover,
-    .carta22:hover,
-    .carta222:hover,
-    .carta2222:hover,
-    .carta4:hover,
-    .carta44:hover,
-    .carta444:hover,
-    .carta4444:hover {
-        transform: scaleX(1.03) !important;
-        transition: transform 0.5s ease;
-    }
-
-    .imgexpli{
-        display: none !important;
-    }
-
 }
