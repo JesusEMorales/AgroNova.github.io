@@ -233,7 +233,7 @@
             <div class="contenidoh1">
                 <h1 class="titulo">Idea</h1>
                 <h4 class="contenido">La tienda en línea oficial de AgroNova surgió en un inicio como una
-                    de nuestras ideas más ambiciosas, juntar nuestra parte física con logística digital 
+                    de nuestras ideas más ambiciosas, juntar nuestra parte física con logística digital
                     fue un gran reto para nuestro equipo de desarrollo y dirección creativa. Consideramos
                     firmemente que tener ambición sobre esta idea fue una de nuestras mejores decisiones
                     empresariales, ya que con esto hemos buscado atraer y alcanzar a un público más general.</h4>
@@ -270,7 +270,8 @@
                     <input type="text" id="numero-tarjeta" placeholder="Ejemplo: 12345678">
                 </div>
                 <p id="mensaje-compra" class="mensaje-compra"></p>
-                <button class="btn-finalizar" id="btn-finalizar" onclick="finalizarCompra()" disabled>Confirmar Pedido</button>
+                <button class="btn-finalizar" id="btn-finalizar" onclick="finalizarCompra()" disabled>Confirmar
+                    Pedido</button>
             </div>
         </div>
     </div>
@@ -286,6 +287,40 @@
             <p>AgroNova®</p>
         </div>
     </div>
+
+    <script>
+        window.difyChatbotConfig = {
+            token: 'F5BsZb0cFFOnR7B5',
+            baseUrl: 'https://udify.app',
+            routeSegment: 'agent',
+            inputs: {
+                // You can define the inputs from the Start node here
+                // key is the variable name
+                // e.g.
+                // name: "NAME"
+            },
+            systemVariables: {
+                // user_id: 'YOU CAN DEFINE USER ID HERE',
+                // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
+            },
+            userVariables: {
+                // avatar_url: 'YOU CAN DEFINE USER AVATAR URL HERE',
+                // name: 'YOU CAN DEFINE USER NAME HERE',
+            },
+        }
+    </script>
+    <script src="https://udify.app/embed.min.js" id="F5BsZb0cFFOnR7B5" defer>
+    </script>
+    <style>
+        #dify-chatbot-bubble-button {
+            background-color: #1C64F2 !important;
+        }
+
+        #dify-chatbot-bubble-window {
+            width: 24rem !important;
+            height: 40rem !important;
+        }
+    </style>
 
     <script src="Tienda.js"></script>
 </body>
