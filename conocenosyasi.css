@@ -8,6 +8,7 @@ body {
     background-color: #dee2ff;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .navbar {
@@ -82,7 +83,14 @@ body {
 }
 
 .logo p {
-    margin: 0;
+    margin-left: 3%;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.logo p:hover {
+    color: #5fa8d3;
+    transition: transform 0.3s ease;
 }
 
 .sesion {

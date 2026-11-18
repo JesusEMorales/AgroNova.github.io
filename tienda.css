@@ -5,8 +5,6 @@ body {
     color: #001d3d;
 }
 
-
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -132,26 +130,27 @@ body {
 }
 
 .btn-carrito {
-    background-color: #800f2f;
+    background-color: #1a759f;
     color: #ffffff;
     border: none;
-    padding: 8px 15px;
+    padding: 10px 18px;
     border-radius: 20px;
     font-weight: bold;
+    font-size: 14px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     transition: background-color 0.2s;
 }
 
 .btn-carrito:hover {
-    background-color: #a4133c;
+    background-color: #184e77;
 }
 
 .badge-carrito {
     background-color: #ffffff;
-    color: #800f2f;
+    color: #1a759f;
     border-radius: 50%;
     padding: 2px 7px;
     font-size: 12px;
@@ -167,6 +166,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
+    align-items: stretch;
 }
 
 .producto-card {
@@ -179,6 +179,8 @@ body {
     position: relative;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     border: 1px solid #e2e8f0;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .producto-card:hover {
@@ -207,6 +209,7 @@ body {
     justify-content: center;
     margin-bottom: 12px;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .img-box img {
@@ -215,30 +218,20 @@ body {
     object-fit: contain;
 }
 
-.btn-agregar {
-    background-color: #001d3d;
-    color: #ffffff;
-    border: none;
-    border-radius: 25px;
-    padding: 9px 18px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    width: fit-content;
-    margin-bottom: 12px;
-    transition: background-color 0.2s;
-}
-
-.btn-agregar:hover {
-    background-color: #1a759f;
+.card-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
 }
 
 .precio-bloque {
     margin-bottom: 8px;
+    flex-shrink: 0;
 }
 
 .descuento-badge {
-    background-color: #a4133c;
+    background-color: #212529;
     color: #ffffff;
     font-size: 11px;
     font-weight: bold;
@@ -270,6 +263,12 @@ body {
     color: #64748b;
 }
 
+.info-card-bottom {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
 .marca-texto {
     font-size: 12px;
     color: #1a759f;
@@ -289,6 +288,26 @@ body {
     font-size: 12px;
     color: #184e77;
     margin-top: auto;
+    margin-bottom: 12px;
+}
+
+.btn-agregar {
+    background-color: #001d3d;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    padding: 9px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content;
+    transition: background-color 0.2s;
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
+.btn-agregar:hover {
+    background-color: #1a759f;
 }
 
 .carrito-modal {
@@ -306,7 +325,7 @@ body {
 
 .carrito-contenido {
     background: #ffffff;
-    width: 360px;
+    width: 380px;
     max-width: 90%;
     height: 100%;
     display: flex;
@@ -343,6 +362,19 @@ body {
     padding: 10px 0;
     border-bottom: 1px solid #e2e8f0;
     font-size: 14px;
+    gap: 10px;
+}
+
+.carrito-item-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.carrito-item-detalle {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 2px;
 }
 
 .btn-eliminar {
@@ -361,7 +393,47 @@ body {
     display: flex;
     justify-content: space-between;
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+}
+
+.pago-tarjeta {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.pago-tarjeta label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #001d3d;
+}
+
+.pago-tarjeta input {
+    padding: 9px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.pago-tarjeta input:focus {
+    border-color: #184e77;
+}
+
+.mensaje-compra {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 6px 0 12px 0;
+    min-height: 18px;
+}
+
+.mensaje-error {
+    color: #d90429;
+}
+
+.mensaje-exito {
+    color: #15803d;
 }
 
 .btn-finalizar {
@@ -374,10 +446,16 @@ body {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
-.btn-finalizar:hover {
+.btn-finalizar:hover:not(:disabled) {
     background-color: #1a759f;
+}
+
+.btn-finalizar:disabled {
+    background-color: #94a3b8;
+    cursor: not-allowed;
 }
 
 .footer {
@@ -398,4 +476,94 @@ body {
     margin: 0 auto;
     width: 100%;
     max-width: 1100px;
+}
+
+.tienda-header-bar {
+    max-width: 1250px;
+    margin: 20px auto 10px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tienda-titulo {
+    font-size: 250%;
+    font-weight: 1000;
+    color: #001d3d;
+    margin: 0;
+}
+
+.titulo:hover {
+    color: #ffc600;
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.contenidoh1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0 0 15px 0;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.textos {
+    display: flex;
+}
+
+.contenedor1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('Img/IMG_20261117_194854.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contenedor2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('Img/IMG_20261117_194839.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contenedor1:hover {
+    transform: translateY(-6px);
+    transition: transform 0.3s ease;
+}
+
+.contenedor2:hover {
+    transform: translateY(-6px);
+    transition: transform 0.3s ease;
 }

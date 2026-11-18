@@ -30,6 +30,13 @@
         </div>
     </div>
 
+    <div class="tienda-header-bar">
+        <h1 class="tienda-titulo">Nuestra tienda</h1>
+        <button class="btn-carrito" onclick="toggleCarrito()">
+            Carrito <span class="badge-carrito" id="contador-carrito">0</span>
+        </button>
+    </div>
+
     <div class="tienda-layout">
         <main class="grid-productos" id="lista-productos">
             <div class="producto-card">
@@ -37,54 +44,70 @@
                 <div class="img-box">
                     <img src="Img/aerogenerador3.jpg" alt="">
                 </div>
-                <button class="btn-agregar" onclick="agregarAlCarrito('Aerogenerador Eólico de Alta Eficiencia 2kW', 6499.00)">
-                    🛒 Agregar
-                </button>
-                <div class="precio-bloque">
-                    <span class="descuento-badge">-13%</span>
-                    <span class="precio-anterior">22,400.00</span>
-                    <div class="precio-actual">19,488.00.<sup>00</sup></div>
-                    <small class="validez">Disponible con respaldo técnico</small>
+                <div class="card-content">
+                    <div class="precio-bloque">
+                        <span class="descuento-badge">-13%</span>
+                        <span class="precio-anterior">22,400.00</span>
+                        <div class="precio-actual">19,488.00.<sup>00</sup></div>
+                        <small class="validez">Disponible con respaldo técnico</small>
+                    </div>
+                    <div class="info-card-bottom">
+                        <span class="marca-texto">AgroNova</span>
+                        <h4 class="nombre-producto">Aerogenerador Eólico de 3 Aspas, Baja Velocidad de Arranque</h4>
+                        <span class="vendedor-texto">Vendedor: AgroNova</span>
+                    </div>
+                    <button class="btn-agregar"
+                        onclick="agregarAlCarrito('Aerogenerador Eólico de Alta Eficiencia 2kW', 6499.00)">
+                        Agregar
+                    </button>
                 </div>
-                <span class="marca-texto">AgroNova</span>
-                <h4 class="nombre-producto">Aerogenerador Eólico de 3 Aspas, Baja Velocidad de Arranque</h4>
-                <span class="vendedor-texto">Vendedor: AgroNova</span>
             </div>
 
             <div class="producto-card">
                 <span class="etiqueta-promo">Garantía 2 años</span>
                 <div class="img-box">
-                    <img src="Img/controladoreolico.jpg" alt="   ">
+                    <img src="Img/controladoreolico.jpg" alt="">
                 </div>
-                <button class="btn-agregar" onclick="agregarAlCarrito('Controlador Eólico Greef + Inversor Growatt', 3850.00)">
-                    🛒 Agregar
-                </button>
-                <div class="precio-bloque">
-                    <span class="descuento-badge">-14%</span>
-                    <span class="precio-anterior">Q1,183.36</span>
-                    <div class="precio-actual">Q1,376.00<sup>00</sup></div>
-                    <small class="validez">Incluye pantalla táctil de monitoreo</small>
+                <div class="card-content">
+                    <div class="precio-bloque">
+                        <span class="descuento-badge">-14%</span>
+                        <span class="precio-anterior">Q1,183.36</span>
+                        <div class="precio-actual">Q1,376.00<sup>00</sup></div>
+                        <small class="validez">Incluye pantalla táctil de monitoreo</small>
+                    </div>
+                    <div class="info-card-bottom">
+                        <span class="marca-texto">Greef / Growatt</span>
+                        <h4 class="nombre-producto">Controlador de Carga Eólico Inteligente + Inversor de Red</h4>
+                        <span class="vendedor-texto">Vendedor: AgroNova</span>
+                    </div>
+                    <button class="btn-agregar"
+                        onclick="agregarAlCarrito('Controlador Eólico Greef + Inversor Growatt', 3850.00)">
+                        Agregar
+                    </button>
                 </div>
-                <span class="marca-texto">Greef / Growatt</span>
-                <h4 class="nombre-producto">Controlador de Carga Eólico Inteligente + Inversor de Red</h4>
-                <span class="vendedor-texto">Vendedor: AgroNova</span>
             </div>
-                       <div class="producto-card">
+
+            <div class="producto-card">
                 <div class="img-box">
-                    <img src="Img/generadorreal.jpg" alt=" ">
+                    <img src="Img/generadorreal.jpg" alt="">
                 </div>
-                <button class="btn-agregar" onclick="agregarAlCarrito('Generador Eólico Imanes Permanentes 2KW', 3200.00)">
-                    🛒 Agregar
-                </button>
-                <div class="precio-bloque">
-                    <span class="descuento-badge">-16%</span>
-                    <span class="precio-anterior">Q1,445.00</span>
-                    <div class="precio-actual"> Q1,213.80<sup>00</sup></div>
-                    <small class="validez">Carcasa de aluminio disipadora</small>
+                <div class="card-content">
+                    <div class="precio-bloque">
+                        <span class="descuento-badge">-16%</span>
+                        <span class="precio-anterior">Q1,445.00</span>
+                        <div class="precio-actual"> Q1,213.80<sup>00</sup></div>
+                        <small class="validez">Carcasa de aluminio disipadora</small>
+                    </div>
+                    <div class="info-card-bottom">
+                        <span class="marca-texto">AgroNova</span>
+                        <h4 class="nombre-producto">Generador Eléctrico de Imanes Permanentes 2KW, Baja RPM</h4>
+                        <span class="vendedor-texto">Vendedor: AgroNova</span>
+                    </div>
+                    <button class="btn-agregar"
+                        onclick="agregarAlCarrito('Generador Eólico Imanes Permanentes 2KW', 3200.00)">
+                        Agregar
+                    </button>
                 </div>
-                <span class="marca-texto">AgroNova</span>
-                <h4 class="nombre-producto">Generador Eléctrico de Imanes Permanentes 2KW, Baja RPM</h4>
-                <span class="vendedor-texto">Vendedor: AgroNova</span>
             </div>
 
             <div class="producto-card">
@@ -92,18 +115,23 @@
                 <div class="img-box">
                     <img src="Img/helicesreal.jpg" alt="Kit de 3 Hélices Aerodinámicas">
                 </div>
-                <button class="btn-agregar" onclick="agregarAlCarrito('Kit de 3 Hélices Aerodinámicas de Fibra', 1150.00)">
-                    🛒 Agregar
-                </button>
-                <div class="precio-bloque">
-                    <span class="descuento-badge">-18%</span>
-                    <span class="precio-anterior">Q1,400.00</span>
-                    <div class="precio-actual">Q1,150.<sup>00</sup></div>
-                    <small class="validez">Diseño aerodinámico silencioso</small>
+                <div class="card-content">
+                    <div class="precio-bloque">
+                        <span class="descuento-badge">-18%</span>
+                        <span class="precio-anterior">Q1,400.00</span>
+                        <div class="precio-actual">Q1,150.<sup>00</sup></div>
+                        <small class="validez">Diseño aerodinámico silencioso</small>
+                    </div>
+                    <div class="info-card-bottom">
+                        <span class="marca-texto">AgroNova</span>
+                        <h4 class="nombre-producto">Juego de 3 Aspas / Hélices Aerodinámicas Reforzadas</h4>
+                        <span class="vendedor-texto">Vendedor: AgroNova</span>
+                    </div>
+                    <button class="btn-agregar"
+                        onclick="agregarAlCarrito('Kit de 3 Hélices Aerodinámicas de Fibra', 1150.00)">
+                        Agregar
+                    </button>
                 </div>
-                <span class="marca-texto">AgroNova</span>
-                <h4 class="nombre-producto">Juego de 3 Aspas / Hélices Aerodinámicas Reforzadas</h4>
-                <span class="vendedor-texto">Vendedor: AgroNova</span>
             </div>
 
             <div class="producto-card">
@@ -111,81 +139,122 @@
                 <div class="img-box">
                     <img src="Img/bombahidro.jpg" alt="Bomba Hidroneumática Truper 24L">
                 </div>
-                <button class="btn-agregar" onclick="agregarAlCarrito('Bomba Hidroneumática Truper 24L 1/2 HP', 1495.00)">
-                    🛒 Agregar
-                </button>
-                <div class="precio-bloque">
-                    <span class="descuento-badge">-19%</span>
-                    <span class="precio-anterior">Q1,850.00</span>
-                    <div class="precio-actual">Q1,495.<sup>00</sup></div>
-                    <small class="validez">Soporta hasta 4 tomas de agua</small>
+                <div class="card-content">
+                    <div class="precio-bloque">
+                        <span class="descuento-badge">-19%</span>
+                        <span class="precio-anterior">Q1,850.00</span>
+                        <div class="precio-actual">Q1,495.<sup>00</sup></div>
+                        <small class="validez">Soporta hasta 4 tomas de agua</small>
+                    </div>
+                    <div class="info-card-bottom">
+                        <span class="marca-texto">Truper</span>
+                        <h4 class="nombre-producto">Sistema Hidroneumático 24 Litros, 1/2 HP, 4 Tomas de Agua</h4>
+                        <span class="vendedor-texto">Vendedor: AgroNova</span>
+                    </div>
+                    <button class="btn-agregar"
+                        onclick="agregarAlCarrito('Bomba Hidroneumática Truper 24L 1/2 HP', 1495.00)">
+                        Agregar
+                    </button>
                 </div>
-                <span class="marca-texto">Truper</span>
-                <h4 class="nombre-producto">Sistema Hidroneumático 24 Litros, 1/2 HP, 4 Tomas de Agua</h4>
-                <span class="vendedor-texto">Vendedor: AgroNova</span>
             </div>
 
             <div class="producto-card">
                 <div class="img-box">
                     <img src="Img/automatica.jpg" alt="Sembradora Manual de Precisión">
                 </div>
-                <button class="btn-agregar" onclick="agregarAlCarrito('Sembradora Manual de Rodillo de Precisión', 980.00)">
-                    🛒 Agregar
-                </button>
-                <div class="precio-bloque">
-                    <span class="descuento-badge">-18%</span>
-                    <span class="precio-anterior">Q1,200.00</span>
-                    <div class="precio-actual">Q980.<sup>00</sup></div>
-                    <small class="validez">Para maíz, frijol y hortalizas</small>
+                <div class="card-content">
+                    <div class="precio-bloque">
+                        <span class="descuento-badge">-18%</span>
+                        <span class="precio-anterior">Q1,200.00</span>
+                        <div class="precio-actual">Q980.<sup>00</sup></div>
+                        <small class="validez">Para maíz, frijol y hortalizas</small>
+                    </div>
+                    <div class="info-card-bottom">
+                        <span class="marca-texto">AgroTech</span>
+                        <h4 class="nombre-producto">Sembradora Automática de Precisión con Rodillo Compactador</h4>
+                        <span class="vendedor-texto">Vendedor: AgroNova</span>
+                    </div>
+                    <button class="btn-agregar"
+                        onclick="agregarAlCarrito('Sembradora Manual de Rodillo de Precisión', 980.00)">
+                        Agregar
+                    </button>
                 </div>
-                <span class="marca-texto">AgroTech</span>
-                <h4 class="nombre-producto">Sembradora Automática de Precisión con Rodillo Compactador</h4>
-                <span class="vendedor-texto">Vendedor: AgroNova</span>
             </div>
 
             <div class="producto-card">
                 <span class="etiqueta-promo">50 semillas</span>
                 <div class="img-box">
-                    <img src="Img/elote.webp" alt="Semillas de Maíz Blanco CZ Grain">
+                    <img src="Img/semillasmaiz.jpg" alt="Semillas de Maíz Blanco CZ Grain">
                 </div>
-                <button class="btn-agregar" onclick="agregarAlCarrito('Semillas de Maíz Blanco (50 uds)', 45.00)">
-                    🛒 Agregar
-                </button>
-                <div class="precio-bloque">
-                    <span class="descuento-badge">-18%</span>
-                    <span class="precio-anterior">Q55.00</span>
-                    <div class="precio-actual">Q45.<sup>00</sup></div>
-                    <small class="validez">Variedad tradicional no-GMO</small>
+                <div class="card-content">
+                    <div class="precio-bloque">
+                        <span class="descuento-badge">-18%</span>
+                        <span class="precio-anterior">Q55.00</span>
+                        <div class="precio-actual">Q45.<sup>00</sup></div>
+                        <small class="validez">Variedad tradicional no-GMO</small>
+                    </div>
+                    <div class="info-card-bottom">
+                        <span class="marca-texto">CZ Grain</span>
+                        <h4 class="nombre-producto">Semillas de Maíz Blanco Premium (Bolsa con 50 Semillas)</h4>
+                        <span class="vendedor-texto">Vendedor: AgroNova</span>
+                    </div>
+                    <button class="btn-agregar" onclick="agregarAlCarrito('Semillas de Maíz Blanco (50 uds)', 45.00)">
+                        Agregar
+                    </button>
                 </div>
-                <span class="marca-texto">CZ Grain</span>
-                <h4 class="nombre-producto">Semillas de Maíz Blanco Premium (Bolsa con 50 Semillas)</h4>
-                <span class="vendedor-texto">Vendedor: AgroNova</span>
             </div>
 
             <div class="producto-card">
                 <div class="img-box">
-                    <img src="img/tomatess.webp" alt="Semillas de Tomate Germovegs">
+                    <img src="Img/tomatereal.jpg" alt="Semillas de Tomate Germovegs">
                 </div>
-                <button class="btn-agregar" onclick="agregarAlCarrito('Sobre Semillas de Tomate Germovegs', 15.00)">
-                    🛒 Agregar
-                </button>
-                <div class="precio-bloque">
-                    <span class="descuento-badge">-25%</span>
-                    <span class="precio-anterior">Q20.00</span>
-                    <div class="precio-actual">Q15.<sup>00</sup></div>
-                    <small class="validez">Rinde aprox. 350 plantas/gramo</small>
+                <div class="card-content">
+                    <div class="precio-bloque">
+                        <span class="descuento-badge">-25%</span>
+                        <span class="precio-anterior">Q20.00</span>
+                        <div class="precio-actual">Q15.<sup>00</sup></div>
+                        <small class="validez">Rinde aprox. 350 plantas/gramo</small>
+                    </div>
+                    <div class="info-card-bottom">
+                        <span class="marca-texto">Germoveg's</span>
+                        <h4 class="nombre-producto">Semillas para Siembra de Tomate (Lycopersicum esculentum)</h4>
+                        <span class="vendedor-texto">Vendedor: AgroNova</span>
+                    </div>
+                    <button class="btn-agregar" onclick="agregarAlCarrito('Sobre Semillas de Tomate Germovegs', 15.00)">
+                        Agregar
+                    </button>
                 </div>
-                <span class="marca-texto">Germoveg's</span>
-                <h4 class="nombre-producto">Semillas para Siembra de Tomate (Lycopersicum esculentum)</h4>
-                <span class="vendedor-texto">Vendedor: AgroNova</span>
             </div>
         </main>
+    </div>
+
+    <div class="textos">
+        <div class="contenedor1">
+            <div class="contenidoh1">
+                <h1 class="titulo">Idea</h1>
+                <h4 class="contenido">La tienda en línea oficial de AgroNova surgió en un inicio como una
+                    de nuestras ideas más ambiciosas, juntar nuestra parte física con logística digital 
+                    fue un gran reto para nuestro equipo de desarrollo y dirección creativa. Consideramos
+                    firmemente que tener ambición sobre esta idea fue una de nuestras mejores decisiones
+                    empresariales, ya que con esto hemos buscado atraer y alcanzar a un público más general.</h4>
+            </div>
+        </div>
+        <div class="contenedor2">
+            <div class="contenidoh1">
+                <h1 class="titulo">Prática</h1>
+                <h4 class="contenido">Actualmente nuestra tienda en línea ya ha sido finalizada de forma
+                    satisfactoria, contando con un diseño exclusivo de nuestra empresa y con una variedad
+                    de productos enorme dirigida exclusivamente a nuestro enfoque principal, la energía eólica
+                    renovable y la agricultura complementaria a ella, estamos muy contentos por brindarte un
+                    espacio de compra en línea seguro y eficiente, gracias por tu visita en AgroNova en Línea.</h4>
+            </div>
+        </div>
     </div>
 
     <div class="carrito-modal" id="carrito-modal">
         <div class="carrito-contenido">
             <div class="carrito-header">
-                <h3>🛒 Tu Carrito AgroNova</h3>
+                <h3>Tu Carrito en AgroNova</h3>
                 <button onclick="toggleCarrito()" class="cerrar-carrito">✖</button>
             </div>
             <div class="carrito-items" id="carrito-items">
@@ -193,10 +262,15 @@
             </div>
             <div class="carrito-footer">
                 <div class="total-linea">
-                    <span>Total a pagar:</span>
+                    <span>Subtotal:</span>
                     <strong id="carrito-total">Q0.00</strong>
                 </div>
-                <button class="btn-finalizar" onclick="finalizarCompra()">Confirmar Pedido</button>
+                <div class="pago-tarjeta">
+                    <label for="numero-tarjeta">Número de tarjeta:</label>
+                    <input type="text" id="numero-tarjeta" placeholder="Ejemplo: 12345678">
+                </div>
+                <p id="mensaje-compra" class="mensaje-compra"></p>
+                <button class="btn-finalizar" id="btn-finalizar" onclick="finalizarCompra()" disabled>Confirmar Pedido</button>
             </div>
         </div>
     </div>
@@ -213,7 +287,7 @@
         </div>
     </footer>
 
-    <script src="tienda.js"></script>
+    <script src="Tienda.js"></script>
 </body>
 
 </html>
